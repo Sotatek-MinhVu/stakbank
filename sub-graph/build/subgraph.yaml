@@ -1,0 +1,45 @@
+specVersion: 0.0.2
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: stakbank
+    network: rinkeby
+    source:
+      address: "0xCE37fc69655A99036a2FdEDd13daEe67c86df15E"
+      abi: stakbank
+      startBlock: 8575835
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - OwnershipTransferred
+        - Paused
+        - PoolCreated
+        - RewardAdded
+        - RewardPaid
+        - Staked
+        - Unpaused
+        - Withdrawn
+      abis:
+        - name: stakbank
+          file: stakbank/abis/stakbank.json
+      eventHandlers:
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Paused(address)
+          handler: handlePaused
+        - event: PoolCreated(string,address,address)
+          handler: handlePoolCreated
+        - event: RewardAdded(uint256)
+          handler: handleRewardAdded
+        - event: RewardPaid(indexed address,uint256)
+          handler: handleRewardPaid
+        - event: Staked(indexed address,uint256)
+          handler: handleStaked
+        - event: Unpaused(address)
+          handler: handleUnpaused
+        - event: Withdrawn(indexed address,uint256)
+          handler: handleWithdrawn
+      file: stakbank/stakbank.wasm

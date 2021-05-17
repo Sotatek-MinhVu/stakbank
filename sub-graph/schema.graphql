@@ -1,0 +1,29 @@
+type StakeEntity @entity {
+  id: ID!
+  amount: BigInt
+  user: Bytes
+}
+
+type Withdrawn @entity {
+  id: ID!
+  amount: BigInt
+  user: Bytes
+}
+
+type RewardPaid @entity {
+  id: ID!
+  reward: BigInt
+  user: Bytes
+}
+
+type RewardAdded @entity {
+  id: ID!
+  reward: BigInt
+}
+
+type PoolCreated @entity {
+  id: ID!
+  name: string
+  lpToken: Bytes
+  rewardToken: Bytes
+}

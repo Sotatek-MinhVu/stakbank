@@ -1,0 +1,5 @@
+type StakeEntity @entity {
+  id: ID!
+  amount: BigInt
+  user: Bytes
+}
