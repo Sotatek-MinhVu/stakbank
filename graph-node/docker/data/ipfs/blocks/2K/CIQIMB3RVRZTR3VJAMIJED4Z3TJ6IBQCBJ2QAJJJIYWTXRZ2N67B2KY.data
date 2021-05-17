@@ -1,0 +1,7 @@
+
+LFtype StakeEntity @entity {
+  id: ID!
+  amount: BigInt
+  user: Bytes
+}
+F

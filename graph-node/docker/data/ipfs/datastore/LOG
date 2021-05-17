@@ -1,0 +1,80 @@
+=============== May 17, 2021 (UTC) ===============
+08:42:48.889859 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:42:48.904957 db@open opening
+08:42:48.920420 version@stat F·[] S·0B[] Sc·[]
+08:42:48.927727 db@janitor F·2 G·0
+08:42:48.928461 db@open done T·23.1144ms
+08:42:49.571399 db@close closing
+08:42:49.573221 db@close done T·1.8218ms
+=============== May 17, 2021 (UTC) ===============
+08:42:49.622357 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:42:49.633154 version@stat F·[] S·0B[] Sc·[]
+08:42:49.634049 db@open opening
+08:42:49.636442 journal@recovery F·1
+08:42:49.643965 journal@recovery recovering @1
+08:42:49.650819 memdb@flush created L0@2 N·1 S·157B "/lo..ins,v1":"/lo..ins,v1"
+08:42:49.661003 version@stat F·[1] S·157B[157B] Sc·[0.25]
+08:42:49.678832 db@janitor F·3 G·0
+08:42:49.679358 db@open done T·44.6037ms
+08:42:49.757656 db@close closing
+08:42:49.759629 db@close done T·1.9686ms
+=============== May 17, 2021 (UTC) ===============
+08:42:49.911498 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:42:49.931200 version@stat F·[1] S·157B[157B] Sc·[0.25]
+08:42:49.932177 db@open opening
+08:42:49.935076 journal@recovery F·1
+08:42:49.938100 journal@recovery recovering @3
+08:42:49.955052 memdb@flush created L0@5 N·4 S·1KiB "/F5..HSV,v5":"/lo..ins,v3"
+08:42:49.958389 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:42:49.986652 db@janitor F·4 G·0
+08:42:49.987852 db@open done T·55.0328ms
+08:42:50.057009 db@close closing
+08:42:50.059727 db@close done T·2.7118ms
+=============== May 17, 2021 (UTC) ===============
+08:42:50.299847 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:42:50.314231 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:42:50.315185 db@open opening
+08:42:50.317734 journal@recovery F·1
+08:42:50.322132 journal@recovery recovering @6
+08:42:50.339543 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:42:50.360283 db@janitor F·4 G·0
+08:42:50.361059 db@open done T·45.4129ms
+08:42:50.421143 db@close closing
+08:42:50.422972 db@close done T·1.8121ms
+=============== May 17, 2021 (UTC) ===============
+08:42:50.523863 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:42:50.532420 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:42:50.533514 db@open opening
+08:42:50.535628 journal@recovery F·1
+08:42:50.537505 journal@recovery recovering @8
+08:42:50.544569 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:42:50.782155 db@janitor F·4 G·0
+08:42:50.782715 db@open done T·248.6465ms
+=============== May 17, 2021 (UTC) ===============
+08:52:09.144596 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:52:09.159091 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+08:52:09.159888 db@open opening
+08:52:09.163628 journal@recovery F·1
+08:52:09.169603 journal@recovery recovering @10
+08:52:09.192550 memdb@flush created L0@12 N·7 S·3KiB "/F5..HSV,v14":"/pr..4VI,v11"
+08:52:09.203124 version@stat F·[3] S·5KiB[5KiB] Sc·[0.75]
+08:52:09.267372 db@janitor F·5 G·0
+08:52:09.268777 db@open done T·108.3512ms
+=============== May 17, 2021 (UTC) ===============
+09:14:20.759229 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:14:20.789322 version@stat F·[3] S·5KiB[5KiB] Sc·[0.75]
+09:14:20.790530 db@open opening
+09:14:20.797932 journal@recovery F·1
+09:14:20.800064 journal@recovery recovering @13
+09:14:20.810764 memdb@flush created L0@15 N·76 S·6KiB "/F5..HSV,v42":"/pr..4VI,v79"
+09:14:20.815118 version@stat F·[4] S·11KiB[11KiB] Sc·[1.00]
+09:14:20.841722 db@janitor F·6 G·0
+09:14:20.842195 db@open done T·50.9622ms
+09:14:20.847343 table@compaction L0·4 -> L1·0 S·11KiB Q·92
+09:14:20.929431 table@build created L1@18 N·21 S·3KiB "/F5..HSV,v42":"/pr..4VI,v79"
+09:14:20.930234 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+09:14:20.933596 table@compaction committed F-3 S-7KiB Ke·0 D·67 T·78.5206ms
+09:14:20.938649 table@remove removed @15
+09:14:20.949269 table@remove removed @12
+09:14:20.952727 table@remove removed @5
+09:14:20.957635 table@remove removed @2

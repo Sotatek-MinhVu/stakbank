@@ -1,0 +1,7 @@
+
+PJtype StakeEntity @entity {
+  id: ID!
+  amount: BigInt
+  address: BigInt
+}
+J
