@@ -78,3 +78,13 @@
 09:14:20.949269 table@remove removed @12
 09:14:20.952727 table@remove removed @5
 09:14:20.957635 table@remove removed @2
+=============== May 17, 2021 (UTC) ===============
+10:36:04.647610 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:36:04.669224 version@stat F·[0 1] S·3KiB[0B 3KiB] Sc·[0.00 0.00]
+10:36:04.670921 db@open opening
+10:36:04.674327 journal@recovery F·1
+10:36:04.682836 journal@recovery recovering @16
+10:36:04.691600 memdb@flush created L0@19 N·36 S·3KiB "/F5..HSV,v94":"/pr..4VI,v125"
+10:36:04.702365 version@stat F·[1 1] S·7KiB[3KiB 3KiB] Sc·[0.25 0.00]
+10:36:04.744813 db@janitor F·4 G·0
+10:36:04.745959 db@open done T·74.2588ms

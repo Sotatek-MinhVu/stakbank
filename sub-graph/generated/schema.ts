@@ -76,3 +76,263 @@ export class StakeEntity extends Entity {
     }
   }
 }
+
+export class WithdrawnEntity extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id !== null, "Cannot save WithdrawnEntity entity without an ID");
+    assert(
+      id.kind == ValueKind.STRING,
+      "Cannot save WithdrawnEntity entity with non-string ID. " +
+        'Considering using .toHex() to convert the "id" to a string.'
+    );
+    store.set("WithdrawnEntity", id.toString(), this);
+  }
+
+  static load(id: string): WithdrawnEntity | null {
+    return store.get("WithdrawnEntity", id) as WithdrawnEntity | null;
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get amount(): BigInt | null {
+    let value = this.get("amount");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBigInt();
+    }
+  }
+
+  set amount(value: BigInt | null) {
+    if (value === null) {
+      this.unset("amount");
+    } else {
+      this.set("amount", Value.fromBigInt(value as BigInt));
+    }
+  }
+
+  get user(): Bytes | null {
+    let value = this.get("user");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set user(value: Bytes | null) {
+    if (value === null) {
+      this.unset("user");
+    } else {
+      this.set("user", Value.fromBytes(value as Bytes));
+    }
+  }
+}
+
+export class RewardPaidEntity extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id !== null, "Cannot save RewardPaidEntity entity without an ID");
+    assert(
+      id.kind == ValueKind.STRING,
+      "Cannot save RewardPaidEntity entity with non-string ID. " +
+        'Considering using .toHex() to convert the "id" to a string.'
+    );
+    store.set("RewardPaidEntity", id.toString(), this);
+  }
+
+  static load(id: string): RewardPaidEntity | null {
+    return store.get("RewardPaidEntity", id) as RewardPaidEntity | null;
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get reward(): BigInt | null {
+    let value = this.get("reward");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBigInt();
+    }
+  }
+
+  set reward(value: BigInt | null) {
+    if (value === null) {
+      this.unset("reward");
+    } else {
+      this.set("reward", Value.fromBigInt(value as BigInt));
+    }
+  }
+
+  get user(): Bytes | null {
+    let value = this.get("user");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set user(value: Bytes | null) {
+    if (value === null) {
+      this.unset("user");
+    } else {
+      this.set("user", Value.fromBytes(value as Bytes));
+    }
+  }
+}
+
+export class RewardAddedEntity extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id !== null, "Cannot save RewardAddedEntity entity without an ID");
+    assert(
+      id.kind == ValueKind.STRING,
+      "Cannot save RewardAddedEntity entity with non-string ID. " +
+        'Considering using .toHex() to convert the "id" to a string.'
+    );
+    store.set("RewardAddedEntity", id.toString(), this);
+  }
+
+  static load(id: string): RewardAddedEntity | null {
+    return store.get("RewardAddedEntity", id) as RewardAddedEntity | null;
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get reward(): BigInt | null {
+    let value = this.get("reward");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBigInt();
+    }
+  }
+
+  set reward(value: BigInt | null) {
+    if (value === null) {
+      this.unset("reward");
+    } else {
+      this.set("reward", Value.fromBigInt(value as BigInt));
+    }
+  }
+}
+
+export class PoolCreatedEntity extends Entity {
+  constructor(id: string) {
+    super();
+    this.set("id", Value.fromString(id));
+  }
+
+  save(): void {
+    let id = this.get("id");
+    assert(id !== null, "Cannot save PoolCreatedEntity entity without an ID");
+    assert(
+      id.kind == ValueKind.STRING,
+      "Cannot save PoolCreatedEntity entity with non-string ID. " +
+        'Considering using .toHex() to convert the "id" to a string.'
+    );
+    store.set("PoolCreatedEntity", id.toString(), this);
+  }
+
+  static load(id: string): PoolCreatedEntity | null {
+    return store.get("PoolCreatedEntity", id) as PoolCreatedEntity | null;
+  }
+
+  get id(): string {
+    let value = this.get("id");
+    return value.toString();
+  }
+
+  set id(value: string) {
+    this.set("id", Value.fromString(value));
+  }
+
+  get name(): string | null {
+    let value = this.get("name");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toString();
+    }
+  }
+
+  set name(value: string | null) {
+    if (value === null) {
+      this.unset("name");
+    } else {
+      this.set("name", Value.fromString(value as string));
+    }
+  }
+
+  get lpToken(): Bytes | null {
+    let value = this.get("lpToken");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set lpToken(value: Bytes | null) {
+    if (value === null) {
+      this.unset("lpToken");
+    } else {
+      this.set("lpToken", Value.fromBytes(value as Bytes));
+    }
+  }
+
+  get rewardToken(): Bytes | null {
+    let value = this.get("rewardToken");
+    if (value === null || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBytes();
+    }
+  }
+
+  set rewardToken(value: Bytes | null) {
+    if (value === null) {
+      this.unset("rewardToken");
+    } else {
+      this.set("rewardToken", Value.fromBytes(value as Bytes));
+    }
+  }
+}
