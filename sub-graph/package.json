@@ -5,9 +5,9 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ Sotatek-MinhVu/sub-graph",
-    "create-local": "graph create --node http://localhost:8020/ Sotatek-MinhVu/sub-graph",
-    "remove-local": "graph remove --node http://localhost:8020/ Sotatek-MinhVu/sub-graph",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Sotatek-MinhVu/sub-graph"
+    "create-local": "graph create --node http://localhost:8120/ Sotatek-MinhVu/sub-graph",
+    "remove-local": "graph remove --node http://localhost:8120/ Sotatek-MinhVu/sub-graph",
+    "deploy-local": "graph deploy --node http://localhost:8120/ --ipfs http://localhost:5101 Sotatek-MinhVu/sub-graph"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.20.0",

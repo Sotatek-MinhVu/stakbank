@@ -64,13 +64,13 @@ ENV GRAPH_NODE_CONFIG ""
 ENV disable_core_dumps ""
 
 # HTTP port
-EXPOSE 8000
+EXPOSE 8100
 # WebSocket port
-EXPOSE 8001
+EXPOSE 8101
 # JSON-RPC port
-EXPOSE 8020
+EXPOSE 8120
 # Indexing status port
-EXPOSE 8030
+EXPOSE 8130
 
 RUN apt-get update \
  && apt-get install -y libpq-dev ca-certificates netcat
